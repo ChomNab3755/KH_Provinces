@@ -5,7 +5,6 @@
     .title {
         text-align: center;
         font-weight: bold;
-        background-image: url(bg.jpeg);
     }
     
     .cam {
@@ -41,6 +40,8 @@
         position: relative;
         display: inline-block;
         margin-left: 20px;
+        flex: 1 1 200px;
+        /* base size and responsive */
     }
     
     .dropbtn {
@@ -57,6 +58,8 @@
         -ms-border-radius: 5px 5px;
         -o-border-radius: 5px 5px;
         font-family: khmer os battambang;
+        flex: 1 1 200px;
+        /* base size and responsive */
     }
     
     .dropdown-content {
@@ -139,14 +142,6 @@
         font-family: Khmer OS Battambang;
     }
     
-    .image1 {
-        display: flex;
-        /*Centervertically*/
-        justify-content: space-between;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
     .back {
         font-family: khmer os battambang;
         cursor: pointer;
@@ -182,11 +177,10 @@
     
     .search {
         display: flex;
-        justify-items: anto;
         align-items: center;
-        margin: 0px;
         margin-left: 5px;
-        flex-flow: row-reverse;
+        flex: 1 1 200px;
+        /* base size and responsive */
     }
     
     .search input {
@@ -218,4 +212,35 @@
         font-family: khmer os battambang;
         background-color: #2F3C7E;
         color: white;
+    }
+    
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .image1 {
+        display: flex;
+        /*Centervertically*/
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    .image1 img {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    @media only screen and (max-witdth: 767px) {
+        .bar4 {
+            flex: 1 1 100%;
+        }
     }
